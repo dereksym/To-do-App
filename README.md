@@ -1,2 +1,1 @@
-Simple Todo List App
-Created using vanilla javascript
+Simple Todo List App created using vanilla javascript
