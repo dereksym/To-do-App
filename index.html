@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Easy Todo List</h1>
+    </header>
+    <form name="todoList">
+        <input type="text" name='todoInputField' class="todo-input" autofocus>
+        <select name="todo-filter" class="todo-filter">
+            <option value="all">All</option>
+            <option value="checked">Checked</option>
+            <option value="todo">To-do</option>
+        <i class="fas fa-caret-square-down"></i>
+        </select>
+        <button type="submit" class="todo-button">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form> 
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

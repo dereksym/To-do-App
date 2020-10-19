@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    list-style-type: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(30,198,175,1) 0%, rgba(3,164,196,1) 100%);
+}
+
+
+header h1 {
+    margin: 8rem 0 3rem 0;
+    font-size: 50px;
+    color: white;
+}
+
+form input,form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: white;
+}
+
+form input {
+    border-radius: 0.3rem 0 0 0.3rem;
+    font-weight: bold;
+}
+
+form button {
+    border-radius: 0 0.3rem 0.3rem 0;
+    color: rgb(5, 207, 187);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: white;
+    background: rgb(5, 207, 187);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.todo {
+    display: flex;
+    background: white;
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius:  0.3rem;
+    min-width: 500px;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding-left: 10px;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.fa-check {
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    color:  white;
+    background: rgb(5, 207, 187);
+}
+
+.fa-trash{
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    color:  white;
+    background: rgb(5, 207, 187);
+}
+
+.fa-check:hover{
+    background: rgb(80, 218, 0);
+}
+
+.fa-trash:hover {
+    background: rgb(228, 28, 144);
+}
+
+.list-checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.delete-animation {
+    opacity: 0;
+    transition: all 0.2s ease ;
+}
+
+.todo-filter {
+    font-weight: bold;
+    color: rgb(141, 135, 135);
+    font-size: 1rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    padding: 10px;
+    text-align-last: right;
+}
+
+.todo-filter option {
+    color: rgb(141, 135, 135);
+    font-weight: bold;
+    border: none;
+}
+
